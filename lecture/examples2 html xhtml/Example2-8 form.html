@@ -1,0 +1,54 @@
+<!-- form.html  An example to illustrate a form   -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head> <title> Form </title> </head>
+  <body>
+	<form action = "http://155.69.100.36/ts2u6/as2">
+	
+	<!-- Text --> 
+		<p><hr>
+		Please input your name: <input type = "text" name = "user" size = "30" maxlength = "1" /> 
+		</p>
+	
+	<!-- Checkboxes -->
+		<hr><b>Grocery Checklist</b>
+		<p>
+		<input type = "checkbox" name = "groceries" value = "milk" checked = "checked" />
+		Milk
+		<input type = "checkbox" name = "groceries" value = "bread" />
+		Bread
+		<input type = "checkbox" name = "groceries" value = "eggs" /> 
+		Eggs
+		</p>
+
+	<!-- Radio Buttons -->
+		<b>Age Categories</b>
+		<p>
+		<input type = "radio" name = "age" value = "under20" /> 0-19
+		<input type = "radio" name = "age" value = "20-35" checked = "checked" /> 20-35
+		<input type = "radio" name = "age" value = "36-50" /> 36-50
+		<input type = "radio" name = "age" value = "over50" /> Over 50
+		</p>
+		
+	<!-- Menu -->
+		<p>
+		Menu
+		<select name = "groceries"> 
+			<option> milk </option>
+			<option> bread </option>
+			<option> eggs </option>
+			<option> cheese </option>
+		</select>
+		</p>
+
+	<!-- Text area -->
+		<p>
+		<textarea name = "intro" rows = "5" cols = "80">Sample Text </textarea>
+		</p>
+	
+	<!-- Submit and Reset buttons -->
+		<input type = "reset"  value = "Reset Form" />
+		<input type = "submit" value = "Submit Form" />
+
+	</form>
+  </body>
+</html>

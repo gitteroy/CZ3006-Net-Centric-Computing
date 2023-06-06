@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- parameters.html 
+     The params function and a test driver for it.
+     This example illustrates function parameters
+     -->
+<html>
+  <head> <title> Parameters </title>
+    <script type = "text/javascript">
+      <!--
+      // Function params 
+      // Parameters: A variable number of parameters
+      // Returns: nothing
+      // Displays its parameters
+      function params(a, b) {
+        document.write("Function params was passed ",
+						arguments.length, " parameter(s) <br />");
+        document.write("Parameter values are: <br />");
+
+
+        for (var arg = 0; arg < arguments.length; arg++)
+			document.write(arguments[arg], "<br />");
+
+        document.write("<br />");
+		document.write("a is ", a, "<br />b is ", b, "<br />");
+        document.write("<br />");
+      }
+
+      // A test driver for params
+      params("Mozart");
+      params("Mozart", 2);
+      params("Mozart", "Beethoven", "$gt");
+      // -->
+    </script>
+  </body>
+</html>
+

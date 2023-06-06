@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- showHide.html
+     Illustrates visibility control of elements
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Visibility control </title>
+    <script type = "text/javascript">
+    <!--
+    // The event handler function to toggle the visibility 
+    // of the airplane image 
+
+    function flipImag() {
+
+      dom = document.getElementById("sce").style;  
+
+    // Flip the visibility adjective to whatever it is not now 
+
+       if (dom.visibility == "visible")
+           dom.visibility = "hidden";
+       else
+           dom.visibility = "visible";
+    }
+    // -->
+    </script>
+  </head>
+
+  <body>
+    <form action = "">
+      <div id = "sce"  style = "position: relative; 
+           visibility: visible;">
+        <img src = "https://images7.alphacoders.com/838/thumb-350-838168.jpg" 
+             alt = "(Picture of SCE)" />
+      </div>
+      <p>
+        <br />
+        <input type = "button"  value = "Toggle"
+               onclick = "flipImag();" />
+      </p>
+    </form>
+  </body>
+</html>

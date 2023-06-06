@@ -1,0 +1,93 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- radio_click2.html
+     An example of the use of the click event with radio buttons,
+     registering the event handler by assigning an event
+     property
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Illustrate messages for radio buttons </title>
+    <script type = "text/javascript">
+    <!--
+    // The event handler for a radio button collection
+
+    function planeChoice (plane) {
+    // Put the DOM address of the elements array in a local variable
+	
+	  //javascript selects the html element of id "myForm"
+      var dom = document.myForm;
+
+    // Determine which button was pressed
+
+      for (var index = 0; index < dom.planeButton.length; 
+           index++) {
+        if (dom.planeButton[index].checked) {
+		  //send alert based on value of "planeButton"
+          plane = dom.planeButton[index].value;
+          break;
+        }
+      }
+
+    // Produce an alert message about the chosen airplane
+
+      switch (plane) {
+        case "152": 
+          alert("A small two-place airplane for flight training");
+          break;
+        case "172": 
+          alert("The smaller of two four-place airplanes");
+          break; 
+        case "182":
+          alert("The larger of two four-place airplanes");
+          break;    
+        case "210":
+          alert("A six-place high-performance airplane");
+          break; 
+        default:
+          alert("Error in JavaScript function planeChoice");
+          break;
+      }
+    }
+    // -->
+    </script>
+  </head>
+
+  <body>
+    <h4> Cessna single-engine airplane descriptions </h4>
+	
+	<!-- Set form name for javascript to reference to-->
+    <form name = "myForm"  action = "">
+      <p>
+		<!-- myform.element[0]-->
+        <input type = "radio"  name = "planeButton"  value = "152" /> 
+        Model 152
+        <br />
+		<!-- myform.element[1]-->
+        <input type = "radio"  name = "planeButton"  value = "172" />
+        Model 172 (Skyhawk)
+        <br />
+		<!-- myform.element[2]-->
+        <input type = "radio"  name = "planeButton"  value = "182" /> 
+        Model 182 (Skylane)
+        <br />
+		<!-- myform.element[3]-->
+        <input type = "radio"  name = "planeButton"  value = "210" /> 
+        Model 210 (Centurian)
+      </p>
+    </form>
+
+    <script type = "text/javascript">
+      <!--
+	  //trigger event planeChoice
+      var dom = document.myForm;
+      dom.elements[0].onclick = planeChoice;
+      dom.elements[1].onclick = planeChoice;
+      dom.elements[2].onclick = planeChoice;
+      dom.elements[3].onclick = planeChoice;
+      // -->
+    </script>
+  </body>
+</html>

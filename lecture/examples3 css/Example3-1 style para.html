@@ -1,0 +1,54 @@
+<html xmlns ="http://www.w3.org/1999/xhtml">
+  <head> 
+  	<title> CSS </title>
+  	<style type = "text/css">
+  	<!--
+		/* Simple Selector */
+  		h2 {color:purple; font-family:'castella'; font-size:15}	
+
+		/* Class Selectors */
+  		p.normal{color:blue; font-family:'courier'}				
+  		p.special{color:green; font-family:'comic sans ms'; font-size:20}
+
+		/* Generic Selectors */
+  		.funny-font{font-family:'chiller'; color:red; font-size:40}	
+  	-->
+  	</style>
+  </head> 
+  <body>
+ 	<!-- a normal paragraph -->
+ 	<b>T</b>his is a normal 
+	
+	
+	
+	
+	
+	
+	
+	paragraph.
+
+ 	<!-- a paragraph with an inline style sheet -->
+	<p style="color:lime; font-family:'Arial'; font-style:italic"> 
+	This paragraph has an inline style sheet: color=lime, font-family=Arial, style=italic.
+	</p> 
+
+	<!-- Paragraphs with document style sheet applied -->
+	<h2> This paragraph is applied with modified h2. </h2>
+
+	<p class = normal>
+	Style p.normal is applied to this paragraph: color=blue, font-family=Courier.
+	</p>
+
+	<p class = special>
+	Style p.special is applied to this paragraph: color=green, font-family=Comic Sans MS, size=30.
+	</p>
+
+	<p class=funny-font>
+	Style .funny-font is applied to this paragraph (a p tag).
+	</p>
+
+	<h2 class=funny-font>
+	Style .funny-font is applied to this paragraph (an h2 tag).
+	</h2>
+  </body>
+</html>
